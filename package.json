@@ -1,0 +1,28 @@
+{
+  "name": "internship-report",
+  "version": "1.0.0",
+  "description": "Internship Report - ZOMOZ Frontend Developer",
+  "watch": {
+    "build": {
+      "patterns": "*.tex",
+      "extensions": "tex"
+    }
+  },
+  "scripts": {
+    "build": "pdflatex report.tex",
+    "watch": "npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShadowManu/internship-report.git"
+  },
+  "author": "Manuel Pacheco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShadowManu/internship-report/issues"
+  },
+  "homepage": "https://github.com/ShadowManu/internship-report#readme",
+  "dependencies": {
+    "npm-watch": "^0.1.8"
+  }
+}

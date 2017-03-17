@@ -6,3 +6,6 @@
 *.aux
 *.log
 *.pdf
+
+# NPM
+node_modules
