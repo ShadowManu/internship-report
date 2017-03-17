@@ -8,3 +8,4 @@
 
 \usepackage[letter, center, pdflatex]{crop} % Paper Configuration
 \usepackage[utf8]{inputenc} % Character encoding (allows Spanish characters)
+\usepackage[spanish]{babel} % Spanish Language Configuration

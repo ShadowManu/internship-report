@@ -5,11 +5,11 @@
   "watch": {
     "build": {
       "patterns": "*.tex",
-      "extensions": "tex"
+      "extensions": "cls,tex"
     }
   },
   "scripts": {
-    "build": "pdflatex report.tex",
+    "build": "pdflatex -output-directory=dist report.tex",
     "watch": "npm-watch"
   },
   "repository": {
