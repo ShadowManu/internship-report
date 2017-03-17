@@ -1,0 +1,12 @@
+# Editor files
+.vscode/
+
+# Build files
+/dist/
+*.aux
+*.lof
+*.log
+*.lot
+*.pdf
+*.ps
+*.toc
