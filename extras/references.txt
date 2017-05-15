@@ -1,0 +1,4 @@
+HTTP 1.1 SPEC:
+Fielding, Roy T.; Gettys, James; Mogul, Jeffrey C.; Nielsen, Henrik Frystyk; Masinter, Larry; Leach, Paul J.; Berners-Lee, Tim (June 1999). Hypertext Transfer Protocol -- HTTP/1.1. IETF. RFC 2616.
+https://tools.ietf.org/html/rfc2616
+
