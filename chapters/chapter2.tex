@@ -4,11 +4,26 @@ En el presente capítulo se describen los conceptos teóricos primordiales para 
 
 \section{HTTP}
 
-\textit{HTTP} es un protocolo de comunicación.
+\textit{HTTP} es un protocolo de comunicación fundamental a nivel de aplicación para la transferencia de datos a través de Internet, desarrollado por la IETF. Junto a su variante cifrada \textit{https}, son el protocolo por defecto para solicitar información a servidores web. Es un protocolo basado en solicitud-respuesta para modelos de red cliente-servidor.
 
-% BROWSER HTTP COMMS
-% HTTP CACHE
+Superficialmente, una solicitud (\textit{request}) HTTP está conformada por: un método, referido algunas veces como el verbo, el cual indica la acción a realizar; una dirección (URL) que identifica al recurso bajo una representación textual; unos ``encabezados http'' (\textit{headers}); y una opcional carga útil (\textit{payload}), la cual contiene información extra asociada a la solicitud. Por su parte, una respuesta (\textit{response}) está conformada por \textit{headers}, \textit{payload} (opcional) y un código de estado (\textit{status code}), el cual es un número que indica el estado de la respuesta.
+
+Los exploradores web utilizan principalmente este protocolo para solicitar los datos requeridos para presentar una página web y transferir datos entre un servidor y el explorador. Los diferentes componentes expuestos son utilizados para variados objetivos como: solicitar páginas web, autenticación de usuarios, envío de formularios, seguimiento de usuarios, sistemas de caché, etc.
+
+\section{Caché HTTP}
+
+El almacenamiento en caché de \textit{http} es una técnica para acelerar el desempeño de \textit{requests}, aprovechando recursos que han sido solicitados previamente y se consideran localmente válidos. Existen varios tipos de caché HTTP. Las dos categorías más importantes son la caché privada del explorador y la caché ``proxy'' compartida. La primera es manejada internamente por el explorador en base a respuestas recibidas, mientras que la segunda puede estar implantada en diferentes lugares de la red, tal como el proveedor del servicio de red-internet (ISP) y el proveedor del servidor web. Generalmente, implantar un sistema de caché HTTP consiste en modificar las respuestas salientes del servidor web, para dirigir en la medida de lo posible el comportamiento de la caché del explorador web.
+
+Hay diferentes formas de implantar un sistema de Caché HTTP en un servidor web, y cada una permite manejar diferentes casos de uso. Durante el presente trabajo, se considerará la técnica de almacenamiento en caché basada en el encabezado HTTP llamado \texttt{Cache-Control}.
+
+El encabezado \texttt{Cache-Control} consiste en un conjunto de directivas que especifican el comportamiento de los sistemas de caché. Estas directivas especifican si la información es pública o privada (si los intermediarion deben guardarla o no respectivamente), por cuánto tiempo es válida, si deben revalidar con una caché compartida antes de utilizar un recurso almacenado en caché, etc. Otros encabezados asociados complementan a estas directivas, como el encabezado \texttt{ETag}, el cual consiste en un identificador para revalidar un recurso en caché. Dependiendo del caso de uso necesario, se utiliza una combinación de directivas apropiadas al recurso a mantener en el sistema de caché.
+
+\section{Service Worker}
+
+WIP
+
 % SERVICE WORKER
+% CACHE API
 
 % ANGULAR FRAMEWORK
 % OBSERVABLES
