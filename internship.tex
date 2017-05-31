@@ -13,10 +13,16 @@
 
 % \usepackage[style=altlist,toc,numberline,acronym]{glossaries} % Glossary information
 
+% Aliases for easy reuse insde components and chapters
+\newcommand*\business{Servicios ZOI, CA.\xspace}
+\newcommand*\pwas{\textit{Progressive Web Apps}\xspace}
+\newcommand*\projecttitle{Desarrollo del sistema de funcionalidades offline en la plataforma web de Servicios ZOI C.A.}
+\newcommand*\projectauthor{Manuel Alejandro Pacheco Moreno}
+
 % Document Metadata
 \hypersetup{
-  pdftitle = {TÍTULO PENDIENTE}, % TODO
-  pdfauthor = {Manuel Pacheco},
+  pdftitle = {\projecttitle},
+  pdfauthor = {\projectauthor},
   colorlinks,
   citecolor=black,
   filecolor=black,
@@ -25,9 +31,6 @@
   urlcolor=black
 }
 
-% Aliases for easy reuse insde components and chapters
-\newcommand*\business{Servicios ZOI, CA.\xspace}
-\newcommand*\pwas{\textit{Progressive Web Apps}\xspace}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOCUMENT
@@ -37,7 +40,7 @@
 
 % Initial components
 \input{./components/cover.tex}
-% \input{./components/act.tex}
+% \input{./components/act.tex} TODO
 
 \configurestart
 

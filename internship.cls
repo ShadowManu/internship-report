@@ -1,4 +1,4 @@
-% New Report Class by Manuel Pacheco
+% New Internship Class by Manuel Pacheco
 
 \NeedsTeXFormat{LaTeX2e} % Project Started with version date [2016/02/01]
 \ProvidesClass{internship}[2017/03/17 USB Internship Report]
