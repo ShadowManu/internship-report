@@ -20,7 +20,7 @@
 \setlength{\headheight}{15pt}
 \marginsize{3cm}{2cm}{2cm}{2cm}
 
-% Chapter Configuration
+% Start Configuration
 \newcommand*{\configurestart}{
   \setcounter{secnumdepth}{3}
   \setcounter{tocdepth}{4}
@@ -38,9 +38,11 @@
   \cfoot{\fancyplain{}{\thepage}}
   \rfoot{}
 }
+
+% Chapters Configuration
 \newcommand*{\configurechapters}{
   \pagenumbering{arabic}
-  \fancyhf{} % Redefine el encabezado
+  \fancyhf{} % Redefine header
   \lhead{}
   \chead{}
   \rhead{\fancyplain{}{\thepage}}
@@ -51,6 +53,7 @@
 
   \doublespacing
 }
+
 \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter:\,\ #1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\,\ #1}}
 
