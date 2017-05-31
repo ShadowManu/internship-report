@@ -40,3 +40,14 @@
 }
 \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter:\,\ #1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\,\ #1}}
+
+% Useful commands
+\newcommand*{\usbheader}{
+  % USB Logo
+  \includegraphics[scale=0.5,type=png,ext=.png,read=.png]{figures/usb-logo} \\
+
+  % Header
+  \textsc {\large UNIVERSIDAD SIMÓN BOLÍVAR} \\
+  \textsc{\bfseries DECANATO DE ESTUDIOS PROFESIONALES\\
+  COORDINACIÓN DE INGENIERÍA DE LA COMPUTACIÓN}
+}
