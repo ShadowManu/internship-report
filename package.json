@@ -9,7 +9,7 @@
     }
   },
   "scripts": {
-    "build": "pdflatex -output-directory=dist report.tex",
+    "build": "pdflatex -output-directory=dist internship.tex",
     "watch": "npm-watch"
   },
   "repository": {

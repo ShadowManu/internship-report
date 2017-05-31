@@ -1,0 +1,48 @@
+\documentclass[oneside,12pt,letterpaper]{internship}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{blindtext} % Only for content testing TODO REMOVE
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref} % Document Metadata
+\usepackage{xspace} % Aliases spacing
+
+% \usepackage[style=altlist,toc,numberline,acronym]{glossaries} % Glossary information
+
+% Document Metadata
+\hypersetup{
+  pdftitle = {TÍTULO PENDIENTE} % TODO
+  pdfauthor = {Manuel Pacheco}
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+% Aliases for easy reuse insde components and chapters
+\newcommand*\business{Servicios ZOI, CA.\xspace}
+\newcommand*\pwas{\textit{Progressive Web Apps}\xspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Initial components
+\input{./components/cover.tex}
+
+% Chapters
+\input{./chapters/chapter1.tex}
+\input{./chapters/chapter2.tex}
+\input{./chapters/chapter3.tex}
+\input{./chapters/chapter4.tex}
+\end{document}
+
+% TODO SKIPPED
+% \makeindex
+% \makeglossaries
