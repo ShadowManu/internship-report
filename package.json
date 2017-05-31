@@ -9,7 +9,8 @@
     }
   },
   "scripts": {
-    "build": "pdflatex -output-directory=dist internship.tex",
+    "pass": "pdflatex -output-directory=dist internship.tex",
+    "build": "npm run pass && npm run pass",
     "watch": "npm-watch"
   },
   "repository": {
