@@ -1,0 +1,29 @@
+\chapter{Conclusiones y Recomendaciones}
+
+El trabajo realizado por el pasante en \business, permitió indagar en importantes aspectos de la arquitectura de sofware del desarrollo de aplicaciones web modernas. El uso de herramientas e interfaces de los exploradores web modernos permite ofrecer experiencias de usuario generalmente perteneciente a las aplicaciones tradicionales. Los retos y particularidades de la plataforma web requieren un análisis profundo para el éxito en el desarrollo de estas aplicaciones. A partir del desarrollo de este proyecto, se pueden sacar las siguientes conclusiones:
+
+\begin{itemize}
+
+  \item Las aplicaciones modernas con requisitos complejos tienden a requerir un manejo igualmente complejo de múltiples orígenes de información: bases de datos locales, variadas solicitudes a internet, eventos generados por el usuario, etc. Igualmente, requieren sincronizar en el tiempo ciertos tipos de datos y acciones a realizar. La modelacion de estos eventos puede realizarse y simplificarse bajo el uso de modelos reactivos, que permiten flujos matenibles y flexibles. El uso de la librería \textit{rxjs}, es un excelente ejemplar de modelo reactivo y puede utilizarse con grandes beneficios en aplicaciones modernas.
+
+  \item Al incrementar la complejidad de las aplicaciones web y los grandes efectos negativos que tiene la dependencia a la calidad de la conexión a Internet en cuanto a la velocidad de respuesta de éstas, las aplicaciones tienen la tarea de fijar mecanismos que optimicen y minimicen los efectos que ésto tiene en la experiencia del usuario. Estrategias basadas en optimizar el uso de diferentos tipos de almacenamiento en caché disponibles en la plataforma web resultan ser enormente efectivas y deben ser una de las primeras acciones a considerar en la optimización de estas experiencias y sus tiempos de respuesta.
+
+  \item Igualmente, las aplicaciones resilientes a conexiones restringidas permiten a los usuarios disfrutar de una mejor experiencia de usuario, donde independientemente de las condiciones adversas de comunicación son capaces de disfrutar (a medida de lo posible) las funcionalidades que ofrece la aplicación.
+
+\end{itemize}
+
+El aspecto experimental y moderno de las tecnologías utilizadas, así como el tiempo limitado para la realización de la pasantía permiten indicar recomendaciones a realizar tanto en la aplicación desarrollada así como en otras:
+
+\begin{itemize}
+
+  \item Las interfaces utilizadas como lo son \textit{service worker} y \textit{Cache API} son bastante recientes. Es recomendado seguir y verificar la utilidad que puedan proveer librerías y mejores prácticas aceptadas en el estado de arte, de manera de simplificar y extender sobre los flujos explicados en el presente trabajo.
+
+  \item El almacenamiento de datos dinámicos se realizó en una cantidad limitada de vistas. Para ofrecer una experiencia más completa, se recomienda extender su uso a la mayor cantidad de vistas posibles de acuerdo a su viabilidad.
+
+  \item Las funcionalidades ofrecidas por la librería \textit{PouchDB} se utilizaron de forma superficial. Ésta posee más funcionalidades que pudiesen ser exploradas para la sincronización de información de red y local.
+
+  \item Relacionado a esto, un aspecto a estudiar con mayor profundidad es la generalización del manejo sincronizado de información de red y local, independiente de la herramienta asociada. Los flujos de sincronización realizados en el presente se limitaron a ser específicos dependiendo de los casos de uso existentes.
+
+  \item Existen otro conjunto de herramientas asociadas y usos posibles en el \textit{service worker} que no fueron estudiadas en el presente trabajo. Sin embargo, existen especificaciones como \textit{Web Background Synchronization} que permiten enviar y recibir información aún cuando la aplicación no esté activa. Esto permite funcionalidades como recibir notificaciones en demanda y enviar información cuando la red se encuentre disponible.
+
+\end{itemize}
