@@ -1,6 +1,6 @@
 \chapter{Marco Teórico}
 
-En el presente capítulo se describen los conceptos teóricos primordiales para la realización exitosa del proyecto. Se comienza detallando los mecanismos de comunicación utilizados por los exploradores web y tecnologías modernas asociadas a la plataforma web (colocando énfasis en los sistemas disponibles de caché y manejo de datos), para finalizar con la arquitectura del software, concepto de suma importancia para el desarrollo de software en general y en particular para encaminar el desarrollo de \pwas.
+En el presente capítulo se describen los conceptos teóricos primordiales para la realización exitosa del proyecto. Se comienza detallando los mecanismos de comunicación utilizados por los exploradores web y tecnologías modernas asociadas a la plataforma web (colocando énfasis en los sistemas disponibles de caché y manejo de datos), para finalizar con la arquitectura del software, concepto de suma importancia para el desarrollo de software en general y en particular para encaminar el desarollo de \pwas.
 
 \section{HTTP}
 
@@ -20,7 +20,7 @@ El encabezado \texttt{Cache-Control} consiste en un conjunto de directivas que e
 
 \section{Service Worker}
 
-\textit{Service Worker} es una tarea de fondo dirigida por eventos el cual sirve como intermediario (\textit{proxy}) de solicitudes salientes del explorador. Es implementada en JavaScript por el desarrollador de la página web en la cual el \textit{service worker} se registra y le permite tener una herramienta de bajo nivel con la cual puede interceptar una solicitud saliente del explorador y decidir cómo manejarlo. Es una tecnología bastante moderna y entre algunas de sus usos posibles, se encuentra preparar la aplicación web para funcionar sin conexión (\textit{offline}), administrar el almacenamiento de caché local, redirigir y cancelar solicitudes en ciertas condiciones, etc. Es un elemento esencial para la creación de aplicaciones tolerantes a entornos de baja conectividad, como lo son los dispositivos móviles, que pueden encontrarse comúnmente con una conexión a Internet con calidad intermitente.
+\textit{Service Worker} es una tarea de fondo dirigida por eventos el cual sirve como intermediario (\textit{proxy}) de solicitudes salientes del explorador. Es implementada en JavaScript por el desarrollador de la página web en la cual el \textit{service worker} se registra y le permite tener una herramienta de bajo nivel con la cual puede interceptar una solicitud saliente del explorador y decidir cómo manejarlo. Es una tecnología bastante moderna y entre algunas de sus usos posibles, se encuentra preparar la aplicación web para funcionar sin conexión (\textit{offline}), administrar el almacenamiento de caché local, redirigir y cancelar solicitudes en ciertas condiciones, etc. Es un elemento esencial para la creación de applicaciones resilientes a entornos de baja conectividad, como lo son los dispositivos móviles, que pueden encontrarse comúnmente con una conexíón a Internet con calidad intermitente.
 
 \section{Cache API}
 
@@ -28,7 +28,7 @@ La interfaz de programación de \texttt{Cache} es una tecnología moderna dispon
 
 \section{Angular Framework}
 
-Angular es un ``entorno de trabajo'' (\textit{framework}) de código libre desarrollado por Google, orientado a simplificar el desarrollo de aplicaciones web ``RIA'' y ``SPA''. Durante la realización de este proyecto, se hará mención de este proyecto en su versión 1 (mencionada como ``AngularJS'') y su versión 2 en adelante (mencionada simplemente como ``Angular''). Si bien ambas versiones tienen objetivos muy cercanos, Angular introduce una serie de conceptos, implementaciones y decisiones arquitectónicas que incrementan la capacidad de los equipos de desarrollo de proveer nuevas funcionalidades y mejoras, siguiendo prácticas e innovaciones industriales originadas de variadas fuentes de las comunidades de código libre y empresas comerciales asociadas.
+Angular es un ``entorno de trabajo'' (\textit{framework}) de código libre desarrollado por Google, orientado a simplificar el desarrollo de aplicaciones web ``RIA'' y ``SPA''. Se define un ``entorno de trabajo'' como un conjunto cohesivo de librerías de software que ofrecen utilidades y herramientas para simplificar y unificar el desarrollo de un producto de software. En el caso particular de Angular, es un ``entorno de trabajo'' en el lenguaje ``TypeScript'', disponible para crear aplicaciones web para ser ejecutadas en exploradores web modernos. Durante la presentación de este trabajo, se hará mención de este proyecto de software en su versión 1 (mencionada como ``AngularJS'') y su versión 2 en adelante (mencionada simplemente como ``Angular''). Si bien ambas versiones tienen objetivos muy cercanos, Angular introduce una serie de conceptos, implementaciones y decisiones arquitectónicas que incrementan la capacidad de los equipos de desarrollo de proveer nuevas funcionalidades y mejoras, siguiendo prácticas e innovaciones industriales originadas de variadas fuentes de las comunidades de código libre y empresas comerciales asociadas.
 
 \section{Observables}
 
