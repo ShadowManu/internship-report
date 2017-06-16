@@ -4,8 +4,8 @@
   "description": "Internship Report - ZOMOZ Frontend Developer",
   "watch": {
     "build": {
-      "patterns": "*.{cls,tex}",
-      "extensions": "cls,tex"
+      "patterns": "*.{cls,tex,bib}",
+      "extensions": "cls,tex,bib"
     }
   },
   "scripts": {
