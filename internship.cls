@@ -10,6 +10,15 @@
 \usepackage{fancyhdr} % Page configuration
 \usepackage[T1]{fontenc} % For output font proper encoding (correct copy-paste)
 \usepackage{setspace,cite} % Spacing configuration
+\usepackage{tocbibind} % ToC in ToC
+
+\usepackage{titletoc} % Table of Contents Configuration
+\titlecontents{chapter}% <section-type>
+  [0pt]% <left>
+  {\bfseries}% <above-code>
+  {\chaptername\ \thecontentslabel:\quad}% <numbered-entry-format>
+  {}% <numberless-entry-format>
+  {\hfill\contentspage}% <filler-page-format>
 
 % Paragraph configuration
 \tolerance=1000
