@@ -48,6 +48,44 @@ Entre las ventajas que tiene esta metodología se destaca:
 
 \end{enumerate}
 
+Estos fundamentos permean e inspiran la metodología de desarrollo en todos sus aspectos, tanto para mejorar la calidad del producto como la calidad del proceso.
+
 Es de destacar la diferencia entre \textit{continuous delivery} y \textit{continuous deployment}, y es que en este último, cada cambio que pasa las pruebas automáticas es desplegado en producción. Mientras que en el primero, sólo se garantiza que en cualquier momento se pueda hacer el despliegue a producción, por la cual éste no es automático.
 
 Además de \textit{Continuous Delivery}, también se toman ideas de otras metodologías de desarrollo ágil como \textit{Scrum}, por ejemplo el uso de \textit{sprint} de desarrollo de 2 semanas o el uso de tablero \textit{Kanban} para el ordenamiento de las tareas por hacer.
+
+\section{Metodología de Desarrollo}
+
+Uno de los principales aspectos de la metodología de desarrollo es el continuo proceso de retroalimentación, por lo que la metodología explicada en esta sección es el resultado de los aprendizajes y modificaciones que se han realizado antes y durante el tiempo que el pasante se ubicó en el equipo de desarrollo. Igualmente, el pasante ha participado de forma activa en la definición del proceso así como en la discusiones para el mejoramiento del producto, tanto a nivel comercial como técnico.
+
+Se pueden definir dos conjuntos de aspectos que marcan la metodología de desarrollo. Aquellos aspectos generales del desarrollo y aquellos particularmente ligados al desarrollo de software. A continuación, se describen los aspectos generales:
+
+\begin{itemize}
+
+  \item Los ciclos de trabajo, llamados \textit{sprints}, son definidos en lapsos de dos semanas. Siguiendo los principios de \textit{Continuous Delivery}, un tiempo de dos semanas nos permite realizar un conjunto de cambios considerable reduciendo desperdicios. Para las condiciones de la empresa, un tiempo menor dificultaría la completitud de las tareas y un tiempo mayor alargaría la retroalimentación de producto necesaria para definir la efectividad del desarrollo.
+
+  \item Cada \textit{sprint} comienza con una planificación de equipo. Todo el equipo de desarrollo, así como miembros de otros departamentos se reúnen para definir las taras a desarrollar durante el \textit{sprint}, en base a resultados anteriores, necesidades detectadas de los usuarios y otras necesidades del producto. La definición, costo, alcance, prioridad y factibilidad de desarrollo en el ciclo actual son discutidas por los miembros del equipo, para obtener una especificación de las tareas a realizar, conocida internamente como ``planificación del \textit{sprint}''.
+
+  \item La planificación es realizada por los miembros del equipo durante el \textit{sprint}. Generalmente, las tareas están organizadas linealmente en base a sus prioridades y dependencias y las primeras tareas son asignadas a diferentes miembros. Cuando un miembro del equipo finaliza una tarea, se toma una entre las siguientes de la planificación.
+
+  \item El final de cada tarea generalmente viene acompañado de pruebas de aceptación. Cada tarea tiene un encargado independiente conocido como \textit{Product Owner}, perteneciente a otro departamento, con el cual se verifica que la tarea se está desarrollando en base a las necesidades y a la especificación. Durante la finalización de la tarea, su funcionalidad es verificada con el \textit{Product Owner} para realizar pruebas de calidad y aceptación.
+
+  \item Al final del \textit{sprint} se realiza un proceso de retrospectiva. Los miembros del equipo de desarrollo se reúnen para discutir problemas, dificultades y limitaciones que se encontraron durante el desarrollo, sean internos o externos. Dada una discusión de las mismas, el objetivo principal de la reunión es detectar y plantear soluciones a estos problemas los cuales entran en vigencia a partir del siguiente \textit{sprint} para verificar su efectividad. A estos problemas se les hace seguimiento hasta que se consideran solucionados o mitigados.
+
+\end{itemize}
+
+Con respecto a los aspectos específicos al desarrollo de software, se puede mencionar:
+
+\begin{itemize}
+
+  \item El código fuente de la aplicación es gestionado a través del sistema de control de versiones \textit{git} y alojado en \textit{GitHub}. Todos los cambios deben ser registrados y versionables, permitiendo el desarrollo paralelo de diferentes funcionalidades, regresar a estados anteriores de la aplicación y verificar la reproducibilidad de los artefactos producidos.
+
+  \item Se realizan constantes lanzamientos del producto durante el \textit{sprint}. Se considera un lanzamiento (en inglés, \textit{deployment}) como la actualización de los sistemas de producción con una versión particular del sofware, generalmente el último estado estable de la aplicación. Esto se logra manteniendo la reproducibilidad y montaje de los artefactos en los sistemas de producción de forma automática con una correcta gestión de configuraciones, permitiendo a los miembros del equipo realizar un lanzamiento en cuestión de minutos.
+
+  \item Se mantiene una documentación suficiente para todas las partes de la aplicación. Dependiendo de la complejidad de un componente del software, se utilizan tres técnicas para asegurar que una funcionalidad está suficientemente documentada: se utilizan nomenclaturas mnemotécnicas que sean suficientes para describir la funcionalidad, se escriben bloques de comentarios que describan una sección de código de mayor complejidad, se escriben documentos explicativos de una funcionalidad o aspecto particular en el catálogo interno de documentación conocido como \textit{wiki}. Los siguientes dos aspectos también influyen en la documentación del software.
+
+  \item Se utilizan pruebas unitarias en los aspectos que requieren mayor estabilidad. Aunque lo ideal es utilizar mayoritariamente pruebas unitarias que aseguren la estabilidad del producto, se priorizan las secciones más delicades del software con pruebas unitarias. Dada la naturaleza cambiante del producto, no se desarrollan pruebas \textit{end-to-end} de forma significativa, por su alto costo de mantenimiento y corto beneficio.
+
+  \item Se utiliza un mecanismo de revisión de código conocido como \textit{Peer Review}. Este mecanismo consiste en la verificación de la implementación de una funcionalidad por parte de otro miembro del equipo antes de aceptar su integración al estado estable de la aplicación. Con este mecanismo, se reducen el número de errores en desarrollo, se pluraliza el conocimiento sobre diferentes partes de la aplicación (lo que influye en la documentación) y se comparte el conocimiento entre miembros del equipo con diferentes niveles de experiencia.
+
+\end{itemize}
