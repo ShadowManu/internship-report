@@ -1,6 +1,6 @@
 \chapter{Desarrollo}
 
-En el presente capítulo se describirán los pasos y procedimientos realizados para cumplir con los objetivos propuestos para la pasantía y se encuentra dividido en 5 secciones. Cada una representa mejoras incrementales que enriquecieron tanto los aspectos de arquitectura de software como conceptos asociados a las \pwas. Así mismo, cada etapa fue realizada de forma exploratoria, utilizando herramientas y enfoques de desarrollo retroalimentados por los resultados parciales que eran obtenidos.
+En el presente capítulo se describirán los pasos y procedimientos realizados para cumplir con los objetivos propuestos para la pasantía y se encuentra dividido en seis secciones. Las primeras cinco representan mejoras incrementales que enriquecieron tanto los aspectos de arquitectura de software como conceptos asociados a las \pwas. En la última sección se muestra como estos componentes se relacionan entre sí para dar paso a la arquitectura final desarrollada. Así mismo, cada etapa fue realizada de forma exploratoria y proactiva por el pasante, utilizando herramientas y enfoques de desarrollo retroalimentados por los resultados parciales que eran obtenidos.
 
 \section{Migración a Angular 2}
 
@@ -8,7 +8,7 @@ La aplicación web cliente de \business, fue desarrollada inicialmente con el \t
 
 Desde la comunidad de código libre, y con el soporte de Google para su desarrollo, se creó la versión 2 del \textit{framework} `Angular', compartiendo conceptos con su versión anterior pero con la capacidad de atacar muchas más aristas del desarrollo web. Para el momento del desarrollo de la pasantía, aún se encontraba en estado de pre-producción, pero prometiendo ser una herramienta excelente para cumplir con los requisitos de escalabilidad \cite{angularchangelog}.
 
-Durante esta primera etapa, el equipo de Desarrollo, bajo la coordinación del pasante, enfocó buena parte de sus recursos en actualizar la aplicación existente bajo la nueva herramienta. Este proceso se realizó de forma incremental: `Angular 2' tuvo herramientas asociadas que permitían entrelazar componentes de ambas versiones, de manera que nuevas funcionalidades eran agregadas bajo la versión 2, y paulatinamente se fueron migrando componentes pre-existentes de la versión 1 \cite{angularupgrade}. Luego de integrar el uso de ambas herramientas en la plataforma y ajustarlo al sistema de construcción de la aplicación (\textit{builds}), esto permitió seguir manteniendo un ritmo de lanzamiento de funcionalidades aceptable mientras el proceso de actualización era realizado paralelamente. De la misma forma, todo el equipo de desarrollo tuvo la oportunidad de familiarizarse con el nuevo \textit{framework} al implementar o migrar funcionalidades en la plataforma.
+Durante esta primera etapa, el equipo de desarrollo, bajo la coordinación del pasante, enfocó buena parte de sus recursos en actualizar la aplicación existente bajo la nueva herramienta. Este proceso se realizó de forma incremental: `Angular 2' tuvo herramientas asociadas que permitían entrelazar componentes de ambas versiones, de manera que nuevas funcionalidades eran agregadas bajo la versión 2, y paulatinamente se fueron migrando componentes pre-existentes de la versión 1 \cite{angularupgrade}. Luego de integrar el uso de ambas herramientas en la plataforma y ajustarlo al sistema de construcción de la aplicación (\textit{builds}), esto permitió seguir manteniendo un ritmo de lanzamiento de funcionalidades aceptable mientras el proceso de actualización era realizado paralelamente. De la misma forma, todo el equipo de desarrollo tuvo la oportunidad de familiarizarse con el nuevo \textit{framework} al implementar o migrar funcionalidades en la plataforma.
 
 \section{Capa de Comunicaciones}
 
@@ -104,7 +104,7 @@ La correcta implementación de estos flujos confirmaron la viabilidad e interope
 
 \section{Arquitectura final}
 
-Durante las secciones anteriores, se explicó qué funciones realizaba y cómo fueron implementadas cada una de las tecnologías disponibles para la construcción de \pwas. En la figura \ref{fig:diagram}, se plasma la arquitectura final y relación entre cada una ellas.
+Durante las secciones anteriores, se explicó qué funciones realizaba y cómo fueron implementadas cada una de las tecnologías disponibles para la construcción de \pwas. En la figura \ref{fig:diagram}, se plasma la arquitectura final y relación (comunicación) entre cada uno de los componentes. Los únicos componentes que no fueron directamente implementados (pero que juegan un papel importante en la comunicación) son el servidor de datos conocido ``servidor API'' con su correspondiente arquitectura interna (con énfasis en una base de datos con PostgreSQL) y otros servicios ofrecidos por terceros.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{figures/diagram/diagram.png}
