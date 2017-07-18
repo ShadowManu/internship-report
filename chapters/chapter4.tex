@@ -4,7 +4,15 @@ En el presente capítulo se describirán los pasos y procedimientos realizados p
 
 \section{Migración a Angular 2}
 
-La aplicación web cliente de \business, fue desarrollada inicialmente con el \textit{framework} web de desarrollo AngularJS, en su versión 1. Esta herramienta permitió al equipo de desarrollo desplegar funcionalidades de forma rápida y basada en prototipos. Sin embargo, a medida que el número de requisitos que debe cumplir la aplicación aumenta, y consecuentemente la complejidad de la misma, se requiere hacer uso de herramientas que permitan la escalabilidad del desarrollo con el uso de tecnologías en el estado del arte que permitan la mantenibilidad y extensión del software a mayor escala.
+\begin{figure}
+  \includegraphics[width=\linewidth]{figures/diagram/diagram_initial.png}
+  \caption{Arquitectura Inicial de la aplicación web de \business}
+  \label{fig:diagram_initial}
+\end{figure}
+
+La aplicación web cliente de \business, fue desarrollada inicialmente con el \textit{framework} web de desarrollo AngularJS, en su versión 1. Esta herramienta permitió al equipo de desarrollo desplegar funcionalidades de forma rápida y basada en prototipos. En la figura \ref{fig:diagram_initial}, se puede notar la arquitectura inicial de la aplicación: una ``SPA'' desarrollada en el explorador web con un uso básico de herramientas para la comunicación con servicios de datos (API) y otros servicios ofrecidos por terceros. Los archivos de la aplicación son distribuidos a través de un servidor de \textit{nodejs} configurado manualmente.
+
+A medida que el número de requisitos que debe cumplir la aplicación aumenta, y consecuentemente la complejidad de la misma, se requiere hacer uso de herramientas que permitan la escalabilidad del desarrollo con el uso de tecnologías en el estado del arte que permitan la mantenibilidad y extensión del software a mayor escala.
 
 Desde la comunidad de código libre, y con el soporte de Google para su desarrollo, se creó la versión 2 del \textit{framework} `Angular', compartiendo conceptos con su versión anterior pero con la capacidad de atacar muchas más aristas del desarrollo web. Para el momento del desarrollo de la pasantía, aún se encontraba en estado de pre-producción, pero prometiendo ser una herramienta excelente para cumplir con los requisitos de escalabilidad \cite{angularchangelog}.
 
